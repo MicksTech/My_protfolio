@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=BBH+Sans+Hegarty&display=swap"
+        rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="Porfile.jpg" type="image/x-icon">
+    <link rel="import" href="BBH_Sans_Hegarty/OFL.txt">
+    <link rel="import" href="Asimovian/Asimovian-Regular.ttf">
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+</head>
+
+<body id="darktoggle">
+    <div id="loader">
+        <span id="loader_circle"></span>
+        <aside class="sidebar" id="aside" style="display: none;">
+            <div class="hamburger" id="menu-btn">
+                <span id="hamburger"></span>
+                <span id="hamburger"></span>
+                <span id="hamburger"></span>
+            </div>
+
+            <a href="#" class="logo">JM</a>
+
+            <nav>
+                <ul class="navlist">
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z">
+                            </path>
+                            <path d="M9 22V12H15V22"></path>
+                        </svg>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                        <a href="#project">Project</a>
+                    </li>
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M16 8L12 12L8 16"></path>
+                            <path d="M8 8L12 12L16 16"></path>
+                        </svg>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V20"></path>
+                            <circle cx="8" cy="8" r="3"></circle>
+                        </svg>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button id="togglechange" aria-label="Toggle dark mode">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </aside>
+
+        <div class="main-section" id="main_container" style="display: none;">
+            <section class="main-card" id="home">
+                <div class="image-card">
+                    <img src="Porfile.jpg" alt="Profile" />
+                    <span id="line-bottom">
+                    </span>
+                </div>
+
+                <div class="text-card">
+                    <p>FRONTEND DEVELOPER</p>
+                    <h2>Castor, John Michael B. <span id="line-bottom"></span></h2>
+                    <span>Crafting beautiful, responsive web experiences with modern
+                        technologies
+                    </span>
+                    <div class="access-button">
+                        <a href="#skills">View Project</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-card" id="about">
+                <div class="about-text-card">
+                    <h3>About <span id="line-bottom"></span></h3>
+                    <p>
+                        Hi, I'm Michael (call me Miko) – a passionate Frontend Developer and
+                        fresh graduate from <span style="color: blue;">Lemery Colleges</span>. I specialize in building
+                        responsive, user-centric web applications using modern JavaScript
+                        frameworks and best practices.
+                    </p>
+                    <p>
+                        With a strong foundation in HTML,
+                        CSS, and JavaScript, I'm committed to creating interfaces that are
+                        not only visually appealing but also highly functional and
+                        accessible. I love solving complex problems and continuously
+                        learning new technologies.
+                    </p>
+                </div>
+            </section>
+
+            <section class="project-card" id="project">
+                <div>
+                    <h3>Project <span id="line-bottom"></span></h3>
+                </div>
+                <div class="project-image">
+                    <div class="project-item">
+                        <img src="project (2).png" alt="Portfolio project" />
+                        <p>This portfolio website is using</p>
+                        <div>
+                            <img src="html.png" alt="HTML">
+                            <img src="css.png" alt="CSS">
+                            <img src="js.png" alt="JavaScript">
+                        </div>
+                        <a href="https://mickstech.github.io/my_profile/?fbclid=IwY2xjawNvnEVleHRuA2FlbQIxMQABHlsECmJzfeVqs9P9OxWCnR01m1npEsvKQBS8-J5P9je0nzNBmTKvmFbizBQ6_aem_suFNjtR8-rTsX6fr7Twqkg"
+                            target="_blank">View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <img src="project (3).png" alt="Employee registration project" />
+                        <p>This San Luis Employee Registration is using</p>
+                        <div>
+                            <img src="html.png" alt="HTML">
+                            <img src="css.png" alt="CSS">
+                            <img src="js.png" alt="JavaScript">
+                        </div>
+                        <a href="https://mickstech.github.io/my_vote_testing/" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills-card" id="skills">
+                <div class="skills-icon">
+                    <img src="html.png" alt="HTML" />
+                    <img src="css.png" alt="CSS" />
+                    <img src="js.png" alt="JavaScript" />
+                    <img src="react.png" alt="React" />
+                    <img src="php.png" alt="PHP" />
+                    <img src="figma.png" alt="Figma" />
+                    <img src="photoshop.png" alt="Photoshop" />
+                    <img src="tailwind.2.png" alt="Tailwind" />
+                    <img src="bootstrap.png" alt="Bootstrap">
+                    <img src="MySql.png" alt="MySQL" />
+                </div>
+            </section>
+
+            <section class="contact-card" id="contact">
+                <div class="contact-footer">
+                    <div class="contact-info">
+                        <a href="#">JM</a>
+                        <p> <img src="gps_18560639.png" alt="" style="filter: brightness(1) contrast(0);">Brgy
+                            Boboy San
+                            Luis Batangas</p>
+                        <div class="contact-social">
+                            <a href="https://www.facebook.com/johnmichael.b.castor.58" target="_blank"><img
+                                    src="facebook_3128304(1).png" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/mickstech7/" target="_blank"><img
+                                    src="instagram_2626270(1).png" alt="Instagram"></a>
+                            <a href="https://www.youtube.com/@m-castorjohnmichaelbalasbs3039" target="_blank"><img
+                                    src="youtube_3128307.png" alt="YouTube"></a>
+                        </div>
+                        <p>Copy <a id="currentDay"></a> John Michael</p>
+                    </div>
+                    <span></span>
+                    <div class="message-filed">
+                        <h2>Form Connect! <span id="line-bottom"></span></h2>
+                        <form id="contact-form">
+                            <div class="message-filed-input">
+                                <input type="text" name="name" id="name" placeholder="Example John Doe" required>
+                                <br>
+                                <input type="email" name="email" id="email" placeholder="Example johndoe@gmmail.com"
+                                    required>
+                            </div>
+                            <br>
+                            <textarea name="message" id="message" placeholder="Comment" required></textarea>
+                            <br>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
