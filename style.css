@@ -13,14 +13,14 @@
 
 @font-face {
     font-family: "Asimovian";
-    src: url("Asimovian/Asimovian-Regular.ttf");
+    src: url("Asimovian-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "BBH Sans Hegarty";
-    src: url("BBH_Sans_Hegarty/BBHSansHegarty-Regular.ttf");
+    src: url("BBHSansHegarty-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -889,5 +889,6 @@ ul {
         width: 100%;
     }
 }
+
 
 /* End of style.css */
