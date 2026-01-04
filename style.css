@@ -13,14 +13,14 @@
 
 @font-face {
     font-family: "Asimovian";
-    src: url("Asimovian-Regular.ttf");
+    src: url("Asimovian/Asimovian-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "BBH Sans Hegarty";
-    src: url("BBHSansHegarty-Regular.ttf");
+    src: url("BBH_Sans_Hegarty/BBHSansHegarty-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -558,18 +558,17 @@ ul {
     transition: color .3s ease;
 }
 
-.project-card {
-    display: flex;
+.project.card {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    min-height: 100vh;
     width: 100%;
-    animation: fadeIn 0.6s ease;
+    min-height: 100vh;
+    border: 1px solid var(--bg-dark);
 }
 
-.project-card h3 {
+h3 {
     font-family: "BBH Sans Hegarty", sans-serif;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -577,9 +576,9 @@ ul {
     text-align: center;
 }
 
-.project-card #line-bottom {
+#line-bottom {
     display: block;
-    width: 70px;
+    width: 60px;
     height: 4px;
     background: linear-gradient(to right, var(--accent), var(--accent-dark));
     margin: 8px auto 0 auto;
@@ -588,69 +587,40 @@ ul {
 }
 
 .project-item {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    transition: transform .3s ease;
+    width: calc(100% - 20px);
+    gap: 20px;
 }
 
-.project-item:hover {
-    transform: translateY(-5px);
-}
-
-.project-item p {
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-.project-item div img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 10px;
-    padding: 5px;
+.project-item img {
+    width: calc(90% - 5px);
+    height: auto;
     cursor: pointer;
-    transition: transform .3s ease, filter .3s ease;
-}
-
-.project-item div img:hover {
-    transform: scale(1.1) rotate(5deg);
-    filter: brightness(1.2);
 }
 
 .project-item a {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 8px 12px;
-    background-color: var(--accent);
-    color: var(--bg-light);
+    position: relative;
+    left: 0;
+    bottom: 10px;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+    color: var(--bg-light);
+    background: var(--accent);
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
+    transform: translateY(0);
+    transition: transform .3s ease, box-shadow .3s ease, background-color .3s ease;
 }
 
 .project-item a:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(17, 61, 117, 0.25);
-}
-
-.project-image img {
-    width: clamp(450px, 20vw);
-    height: clamp(120px, 20vw, 250px);
-    object-fit: cover;
-    border-radius: 10px;
-    padding: 5px;
-    cursor: pointer;
-    transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.project-image img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(17, 61, 117, 0.3);
+    background: var(--accent-dark);
 }
 
 .skills-card {
@@ -889,6 +859,5 @@ ul {
         width: 100%;
     }
 }
-
 
 /* End of style.css */
