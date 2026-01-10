@@ -2,222 +2,218 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=BBH+Sans+Hegarty&display=swap"
-        rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="Porfile.jpg" type="image/x-icon">
-    <link rel="import" href="BBH_Sans_Hegarty/OFL.txt">
-    <link rel="import" href="Asimovian/-+
-    Asimovian-Regular.ttf">
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=BBH+Sans+Hegarty&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/Project/src/image/Porfile.jpg" type="image/x-icon">
+  <link rel="import" href="fonts/BBH_Sans_Hegarty/OFL.txt">
+  <link rel="import" href="fonts/Asimovian/Asimovian-Regular.ttf">
+  <link rel="stylesheet" href="style.css" />
+  <title>John Michael B Castor</title>
 </head>
 
 <body id="darktoggle">
-    <div id="loader">
-        <span id="loader_circle"></span>
-        <aside class="sidebar" id="aside" style="display: none;">
-            <div class="hamburger" id="menu-btn">
-                <span id="hamburger"></span>
-                <span id="hamburger"></span>
-                <span id="hamburger"></span>
-            </div>
+  <div id="loader">
+    <span id="loader_circle"></span>
+    <!--Aside start-->
+    <aside class="sidebar" id="aside" style="display: none;">
+      <a href="#" class="logo">JM</a>
 
-            <a href="#" class="logo">JM</a>
+      <nav>
+        <ul class="navlist">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-            <nav>
-                <ul class="navlist">
-                    <li>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path
-                                d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z">
-                            </path>
-                            <path d="M9 22V12H15V22"></path>
-                        </svg>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="12" y1="16" x2="12" y2="12"></line>
-                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                        </svg>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <rect x="3" y="3" width="7" height="7"></rect>
-                            <rect x="14" y="3" width="7" height="7"></rect>
-                            <rect x="14" y="14" width="7" height="7"></rect>
-                            <rect x="3" y="14" width="7" height="7"></rect>
-                        </svg>
-                        <a href="#project">Project</a>
-                    </li>
-                    <li>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path
-                                d="M21 10C21 11.1046 20.1046 12 19 12H5C3.89543 12 3 11.1046 3 10V4C3 2.89543 3.89543 2 5 2H19C20.1046 2 21 2.89543 21 4V10Z">
-                            </path>
-                            <path
-                                d="M21 16C21 17.1046 20.1046 18 19 18H5C3.89543 18 3 17.1046 3 16V14C3 12.8954 3.89543 12 5 12H19C20.1046 12 21 12.8954 21 14V16Z">
-                            </path>
-                        </svg>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <human shape d="M20 21V19C20 16.7909 18.2091 15 16 15H8C5.79086 15 4 16.7909 4 19V21"></human>
-                            <circle cx="12" cy="7" r="4"></circle>
-                            <line x1="22" y1="16" x2="2" y2="16"></line>
-                            <line x1="22" y1="22" x2="12" y2="22"></line>
-                        </svg>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <button id="togglechange" aria-label="Toggle dark mode">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-            </button>
-        </aside>
-
-        <div class="main-section" id="main_container" style="display: none;">
-            <section class="main-card" id="home">
-                <div class="image-card">
-                    <img src="Porfile.jpg" alt="Profile" />
-                    <span id="line-bottom">
-                    </span>
-                </div>
-
-                <div class="text-card">
-                    <p>FRONTEND DEVELOPER</p>
-                    <h2>Castor, John Michael B. <span id="line-bottom"></span></h2>
-                    <span>Crafting beautiful, responsive web experiences with modern
-                        technologies
-                    </span>
-                    <div class="access-button">
-                        <a href="#project">View Project</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about-card" id="about">
-                <div class="about-text-card">
-                    <h3>About <span id="line-bottom"></span></h3>
-                    <p>
-                        Hi, I'm Michael (call me Miko) – a passionate Frontend Developer and
-                        fresh graduate from <a style="cursor: pointer;" href="https://www.facebook.com/LemeryCollegesOfficial/" target="_blank">Lemery Colleges</a>. I specialize in building
-                        fresh graduate from <a style="color: blue; cursor: pointer;" href="https://www.facebook.com/LemeryCollegesOfficial/" target="_blank">Lemery Colleges</a>. I specialize in building
-                        responsive, user-centric web applications using modern JavaScript
-                        frameworks and best practices.
-                    </p>
-                    <p>
-                        With a strong foundation in HTML,
-                        CSS, and JavaScript, I'm committed to creating interfaces that are
-                        not only visually appealing but also highly functional and
-                        accessible. I love solving complex problems and continuously
-                        learning new technologies.
-                    </p>
-                </div>
-            </section>
-
-            <section class="project-card" id="project">
-                <div>
-                    <h3>Project <span id="line-bottom"></span></h3>
-                </div>
-               <div class="project-item">
-                    <div>
-                        <img src="project (2).png" alt="">
-                        <a href="https://mickstech.github.io/my_profile/" target="_blank">View project</a>
-                    </div>
-
-                    <div>
-                        <img src="project (3).png" alt="">
-                        <a href="https://mickstech.github.io/my_vote_testing/" target="_blank">View project</a>
-                    </div>
-
-                    <div>
-                        <img src="Other.png" alt="">
-                        <a href="https://mickstech.github.io/my_sofa_finish/#" target="_blank">View project</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="skills-card" id="skills">
-                <div class="skills-icon">
-                    <img src="html.png" alt="HTML" />
-                    <img src="css.png" alt="CSS" />
-                    <img src="js.png" alt="JavaScript" />
-                    <img src="react.png" alt="React" />
-                    <img src="php.png" alt="PHP" />
-                    <img src="figma.png" alt="Figma" />
-                    <img src="photoshop.png" alt="Photoshop" />
-                    <img src="tailwind.2.png" alt="Tailwind" />
-                    <img src="bootstrap.png" alt="Bootstrap">
-                    <img src="MySql.png" alt="MySQL" />
-                </div>
-            </section>
-
-            <section class="contact-card" id="contact">
-                <div class="contact-footer">
-                    <div class="contact-info">
-                        <a href="#">JM</a>
-                        <p> <img src="gps_18560639.png" alt="" style="filter: brightness(1) contrast(0);">Brgy
-                            Boboy San
-                            Luis Batangas</p>
-                        <div class="contact-social">
-                            <a href="https://www.facebook.com/johnmichael.b.castor.58" target="_blank"><img
-                                    src="facebook_3128304(1).png" alt="Facebook"></a>
-                            <a href="https://www.instagram.com/mickstech7/" target="_blank"><img
-                                    src="instagram_2626270(1).png" alt="Instagram"></a>
-                            <a href="https://www.youtube.com/@m-castorjohnmichaelbalasbs3039" target="_blank"><img
-                                    src="youtube_3128307.png" alt="YouTube"></a>
-                        </div>
-                        <p>Copy <a id="currentDay"></a> John Michael</p>
-                    </div>
-                    <span></span>
-                    <div class="message-filed">
-                        <h2>Form Connect! <span id="line-bottom"></span></h2>
-                        <form id="contact-form">
-                            <div class="message-filed-input">
-                                <input type="text" name="name" id="name" placeholder="Example John Doe" required>
-                                <br>
-                                <input type="email" name="email" id="email" placeholder="Example johndoe@gmmail.com"
-                                    required>
-                            </div>
-                            <br>
-                            <textarea name="message" id="message" placeholder="Comment" required></textarea>
-                            <br>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
+      <button id="togglechange" aria-label="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </aside>
+    <!--Aside end-->
+    <!--Main Section start-->
+    <div class="main-section" id="main_container" style="display: none;">
+      <!--Home Section start-->
+      <section class=" main-card" id="home">
+        <div class="image-card">
+          <img src="/Project/src/image/Porfile.jpg" alt="Profile" />
+          <span id="line-bottom">
+          </span>
         </div>
-    </div>
 
-    <script src="main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <div class="text-card">
+          <p>FRONTEND DEVELOPER</p>
+          <h2>Castor, John Michael B. <span id="line-bottom"></span></h2>
+          <span>Crafting beautiful, responsive web experiences with modern
+            technologies
+          </span>
+          <div class="access-button">
+            <a href="#skills">View Project</a>
+          </div>
+        </div>
+      </section>
+      <!--Home Section end-->
+
+      <!--About Section start-->
+      <section class="about-card" id="about">
+        <div class="about-text-card">
+          <h3>About <span id="line-bottom"></span></h3>
+          <p>
+            Hi, I'm Michael (call me Miko) – a passionate Frontend Developer and
+            fresh graduate from <span style="color: blue;">Lemery Colleges</span>. I specialize in building
+            responsive, user-centric web applications using modern JavaScript
+            frameworks and best practices.
+          </p>
+          <p>
+            With a strong foundation in HTML,
+            CSS, and JavaScript, I'm committed to creating interfaces that are
+            not only visually appealing but also highly functional and
+            accessible. I love solving complex problems and continuously
+            learning new technologies.
+          </p>
+        </div>
+      </section>
+      <!--About Section end-->
+
+      <!--Skills Section start-->
+      <section class="skills-card" id="skills">
+        <div>
+          <h3>Skills<span id="line-bottom"></span></h3>
+        </div>
+        <div class="card-container">
+          <div class="card-1">
+            <h4>Frontend & FrameWork</h4>
+            <p>
+              The frontend of this project is designed to deliver a responsive, user-friendly, and visually appealing
+              interface.
+              It
+              was built using modern web technologies such as HTML, CSS, JavaScript, and frameworks like
+              Bootstrap/Tailwind CSS
+              to
+              ensure consistency across different devices and screen sizes.
+            </p>
+            <div>
+              <span>Html</span>
+              <span>Css</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Tailwind CSS</span>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="card-2">
+            <h4>Backend</h4>
+            <p>
+              The backend of this project is responsible for handling server-side logic, database management, and
+              application
+              security. It was developed using PHP with a MySQL database to efficiently process user requests, manage
+              data
+              storage,
+              and ensure data integrity.
+            </p>
+            <div>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+          <div class="card-3">
+            <h4>Others</h4>
+            <p>
+              Other tools used in this project include Git and GitHub for version control, SweetAlert2 and Chart.js for
+              better
+              user
+              interaction and data visualization, and design tools like Figma and Adobe Photoshop for UI/UX design and
+              visual
+              assets.
+            </p>
+            <div>
+              <span>Git & GitHub</span>
+              <span>SweetAlert2</span>
+              <span>Chart.js</span>
+              <span>Figma</span>
+              <span>Adobe Photoshop</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Skills Section end-->
+
+      <!--Project Section start-->
+      <section class="project-card" id="project">
+        <div>
+          <h3>Project <span id="line-bottom"></span></h3>
+        </div>
+        <div class="project-image">
+          <div class="card-project-1">
+            <img src="/Project/src/image/project (3).png" alt="">
+            <div class="">
+              <h4>Employee Registration</h4>
+              <p>Employee Registration is a web application designed to streamline the process of registering employees
+                within an organization.</p>
+              <span>Html</span>
+              <span>Css</span>
+              <span>JavaScript</span>
+            </div>
+            <a href="https://mickstech.github.io/my_vote_testing/" target="_blank">View Project</a>
+          </div>
+
+      </section>
+      <!--Project Section end-->
+
+      <!--Contact Section start-->
+      <section class="contact-card" id="contact">
+        <div class="contact-footer">
+          <div class="contact-info">
+            <a href="#">JM</a>
+            <p> <img src="src/image/gps_18560639.png" alt="" style="filter: brightness(1) contrast(0);">Brgy Boboy San
+              Luis Batangas</p>
+            <div class="contact-social">
+              <a href=""><img src="src/image/facebook_3128304(1).png" alt="Facebook"></a>
+              <a href=""><img src="src/image/instagram_2626270(1).png" alt="Instagram"></a>
+              <a href=""><img src="src/image/youtube_3128307.png" alt="YouTube"></a>
+            </div>
+            <p>Copy <a id="currentDay"></a> John Michael</p>
+          </div>
+          <span></span>
+          <div class="message-filed">
+            <h2>Form Connect!</h2>
+            <form id="contact-form">
+              <div class="message-filed-input">
+                <input type="text" name="name" id="name" placeholder="Example John Doe" required>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Example johndoe@gmmail.com" required>
+              </div>
+              <br>
+              <textarea name="message" id="message" placeholder="Comment" required></textarea>
+              <br>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!--Contact Section end-->
+  <!--Main Section end-->
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
-
